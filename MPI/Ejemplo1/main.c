@@ -15,7 +15,7 @@ int main() {
         int range_max = (my_rank - 1) * range + range;
         for (int i = range_min; i < range_max; ++i)
             local_sum += arr[i];
-        
+        printf("Suma local: %i", local_sum);
         MPI_Send(&local_sum, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
     } else {
 		int total_sum = 0;
@@ -23,7 +23,7 @@ int main() {
             MPI_Recv(&local_sum, 1, MPI_INT,i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
             total_sum += local_sum;
         }
-		printf("The total Sum of the array is: %i", total_sum);
+		printf("The total Sum of the array is: %i\n", total_sum);
     }
     MPI_Finalize();
 	return 0;
