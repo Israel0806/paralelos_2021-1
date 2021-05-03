@@ -1,0 +1,4 @@
+﻿  Producer_consumer.cpp
+C:\UCSP\Semestres\Semestre_IX\Programacion paralela\paralelos_2021-1\OpenMP\Producer_consumer\Producer_consumer\Producer_consumer.cpp(36,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\UCSP\Semestres\Semestre_IX\Programacion paralela\paralelos_2021-1\OpenMP\Producer_consumer\Producer_consumer\Producer_consumer.cpp(82): warning C4715: 'dequeue': not all control paths return a value
+  Producer_consumer.vcxproj -> C:\UCSP\Semestres\Semestre_IX\Programacion paralela\paralelos_2021-1\OpenMP\Producer_consumer\Debug\Producer_consumer.exe
